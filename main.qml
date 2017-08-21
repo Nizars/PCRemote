@@ -4,8 +4,12 @@ import QtQuick.Layouts 1.3
 
 ApplicationWindow {
     visible: true
-    width: 640
-    height: 480
+    width: 1080
+    height: 1920
     title: qsTr("Hello World")
-    // Testing git
+
+    Remote {
+        id: remoteInterface;
+        anchors.fill: parent;
+    }
 }
